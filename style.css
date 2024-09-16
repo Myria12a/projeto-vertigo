@@ -110,6 +110,10 @@ main {
     font-weight: 700;
 }
 
+.bg-desktop{
+    display: none;
+}
+
 .login > p{
     color: var(--gray-600);
 }
@@ -120,6 +124,11 @@ main {
 }
 
 @media(min-width: 1000px){
+
+    body{
+        display: flex;
+    }
+
     header{
         background: none;
         justify-content: flex-start;
@@ -132,5 +141,14 @@ main {
     }
     main{
         padding-inline: 7rem;
+    }
+
+    .bg-desktop{
+        display: block;
+        width: 100%;
+    }
+
+    .conteudo{
+        width: 100%;
     }
 }
