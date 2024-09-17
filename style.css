@@ -11,6 +11,7 @@
     --gray-600: #475569;
     --gray-400: #94A3B8;
     --gray-200: #E2E8F0;
+    --light-purple: #9F67FF;
     --purple: #7C3AEd;
     --white: #fff;
 
@@ -108,10 +109,17 @@ main {
 
     font-size: 1rem;
     font-weight: 700;
+    color: var(--white);
 }
 
 .bg-desktop{
     display: none;
+}
+
+.login button:hover{
+    background: var(--light-purple);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .login > p{
@@ -147,12 +155,24 @@ main {
         padding: 0;
     }
 
+    .conteudo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .bg-desktop{
         display: block;
         width: 100%;
     }
 
-    .conteudo{
-        width: 100%;
+    .descricao h1{
+        font-size: 2.25rem;
     }
+
+    .descricao p{
+        font-size: 1rem;
+    }
+
 }
